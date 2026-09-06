@@ -1,5 +1,7 @@
 # Fate Shears
 
+![Fate Shears 타이틀 화면](Docs/images/fate-shears-title.png)
+
 그림자 능력을 사용하는 주인공의 2D 액션 게임 제작에 참여했음.
 
 - 기간: 2025.09 ~ 2025.11
@@ -7,12 +9,14 @@
 - 담당: 게임 기획, 플레이어 기능 일부 구현
 - 기술: Unity, C#
 - 원본 저장소: [GBGC1/Fate_Shears](https://github.com/GBGC1/Fate_Shears)
+- 팀 공개 페이지: [Fate Shears itch.io](https://ggor.itch.io/fate-shears)
 
-## 내가 맡은 부분
+## 내가 맡은 부분과 구현 방식
 
-- 평상시와 그림자 상태를 오가는 변신 기능을 구현했음.
-- 그림자 상태가 강한 대신 피로도가 쌓이도록 만들었음.
-- HP, 피로도와 그림자 조각을 보여주는 UI를 작업했음.
+- `PlayerShadowController`에서 평상시와 그림자 상태를 오가는 변신 기능을 구현했음.
+- `FatigueSystem`에서 그림자 상태의 피로도 증가와 회복을 관리했음.
+- HP와 피로도 변화 이벤트를 UI에 연결해 게이지가 바로 갱신되게 했음.
+- 그림자 조각 수와 사용할 수 있는 능력을 보여주는 UI를 작업했음.
 - 능력창을 정리하고 B3 구역의 맵 틀을 제작했음.
 
 ## 협업 방식
